@@ -13,6 +13,16 @@ public static Scanner scanner = new Scanner(System.in);
 public static ContactManagement contactManagement = new ContactManagement();
 public static Contact contact = new Contact();
 
+    static {
+        contactManagement.addNew(new Contact("0123456789", "Nhóm 5", "Tiến Cường", "Nam", "HN", "05/06/2000", "abcxyz@gmail.com"));
+        contactManagement.addNew(new Contact("0123456781", "Nhóm 5", "Việt Cường", "Nam", "HD", "04/6/1990", "abcxyz@gmail.com"));
+        contactManagement.addNew(new Contact("0123456782", "Nhóm 5", "Định", "Nam", "HB", "04/6/1990", "abcxyz@gmail.com"));
+        contactManagement.addNew(new Contact("0123456783", "Nhóm 1", "Duy", "Nam", "BG", "05/7/96", "abcxyz@gmail.com"));
+        contactManagement.addNew(new Contact("0123456784", "Nhóm 1", "Trường", "Nam", "NA", "08/04/99", "abcxyz@gmail.com"));
+        contactManagement.addNew(new Contact("0123456785", "Nhóm 1", "Tuấn", "Nam", "NĐ", "30/03/99", "abcxyz@gmail.com"));
+
+    }
+
 public void run(){
     String choice;
 do{
